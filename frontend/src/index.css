@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #f7faf7;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 10% -10%, rgba(183, 228, 199, 0.35), transparent),
+      radial-gradient(ellipse 60% 50% at 90% 0%, rgba(47, 158, 68, 0.10), transparent);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+  }
+  :focus-visible {
+    outline: 2px solid #2f9e44;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-xl border border-white/60 shadow-glass rounded-3xl;
+  }
+  .solid-card {
+    @apply bg-white border border-forest-100 shadow-card rounded-3xl;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-leaf-grad text-white font-semibold px-7 py-3.5 shadow-card hover:shadow-lg hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-forest-900 text-forest-900 font-semibold px-7 py-3.5 hover:bg-forest-900 hover:text-white transition-all duration-200;
+  }
+  .input-field {
+    @apply w-full rounded-2xl border border-forest-100 bg-white/80 px-4 py-3 text-ink placeholder:text-forest-400/60 focus:border-forest-500 focus:ring-2 focus:ring-forest-200 transition-all outline-none;
+  }
+  .section-label {
+    @apply text-xs font-mono font-semibold tracking-[0.2em] uppercase text-forest-600;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
