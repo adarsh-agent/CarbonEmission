@@ -1,0 +1,34 @@
+﻿Project Title:
+CarbonCheck – AI Carbon Footprint Calculator
+
+
+Domain:
+Artificial Intelligence for Sustainability
+
+
+Group Members:
+1. Bansari Makwana - 230670107045
+2. Aadarsh Mishra - 240840131002
+3. Shriya Vyas - 230671070126
+
+
+Project Description:
+CarbonCheck is an AI-powered web application that calculates and predicts a user's carbon footprint based on transportation, electricity, and lifestyle data. It provides personalized suggestions to help users reduce carbon emissions and adopt sustainable living practices.
+
+
+Technologies Used:
+Python
+FastAPI
+React.js
+SQLite
+Scikit-learn
+Pandas
+NumPy
+
+
+Key Features:
+Carbon Footprint Calculator
+AI-Based Emission Prediction
+Interactive Dashboard
+Personalized Eco-Friendly Suggestions
+Data Visualization
